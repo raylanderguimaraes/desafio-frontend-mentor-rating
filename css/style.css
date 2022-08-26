@@ -1,0 +1,204 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+
+/* =========== Global Vars ========*/
+
+:root {
+
+    /* ======== Global Colors ======*/
+    --Orange: hsl(25, 97%, 53%);
+    --White: hsl(0, 0%, 100%);
+    --LightGrey: hsl(217, 12%, 63%);
+    --MediumGrey: hsl(216, 12%, 54%);
+    --DarkBlue: hsl(213, 19%, 18%);
+    --MediumBlue: hsl(235, 9%, 25%);
+    --VeryDarkBlue: hsl(216, 12%, 8%);
+
+
+
+}
+
+
+
+body {
+    background-color: var(--VeryDarkBlue);
+    color: var(--White);
+    font-family: 'Overpass', sans-serif;
+    overflow-x: hidden;
+
+
+}
+
+body h1 {
+    margin-bottom: 15px;
+}
+
+body p {
+    
+    font-size: 15px;
+    color: var(--LightGrey);
+    line-height: 25px;
+    font-weight: 700;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    margin-block: 40px;
+    
+    box-sizing: border-box;
+    
+
+}
+
+.center {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/*========== Style Card Rating ============*/
+
+
+.rating {
+    max-width: 375px;
+    height: fit-content;
+    background-color: var(--DarkBlue);
+    padding: 25px;
+    border: none;
+    border-radius: 30px;
+
+
+}
+
+.rating-hidden {
+    display: none;
+}
+
+.rating .img-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25px;
+    height: 25px;
+    background-color: var(--MediumBlue);
+
+    padding: 12px;
+    margin-bottom: 30px;
+    border-radius: 50%;
+}
+
+
+
+#btn-list {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-block: 30px;
+}
+
+.btn-numbers {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--MediumBlue);
+    color: var(--MediumGrey);
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+
+
+
+.btn-numbers:hover {
+    background-color: var(--Orange);
+}
+.btn-numbers:focus {
+    background-color: var(--LightGrey);
+    color: var(--White);
+}
+
+
+
+
+.rating .btn-submit {
+    background-color: var(--Orange);
+    border: none;
+    width: 100%;
+    padding-block: 15px;
+    border-radius: 25px;
+    text-transform: uppercase;
+    color: var(--White);
+    font-weight: 700;
+    font-size: 15px;
+    letter-spacing: 4px;
+    cursor: pointer;
+}
+
+.rating .btn-submit:hover {
+    background-color: var(--White);
+    color: var(--Orange);
+}
+
+
+/*============ Style Card Thanks ==========*/
+
+.thanks {
+    
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 375px;
+    height: fit-content;
+    background-color: var(--DarkBlue);
+
+    padding: 25px;
+    border: none;
+    border-radius: 30px;
+}
+
+.thanks-show {
+    display: flex;
+}
+
+.thanks .img-thank-wrapper {
+    padding-top: 30px;
+    margin-bottom: 30px;
+}
+.thanks .img-thank-wrapper img {
+    margin-inline: auto;
+    margin-bottom: 35px;
+    display: block;
+}
+
+.thanks p.gray {
+    width: fit-content;
+    font-size: 16px;
+    font-weight: 400;
+    margin: auto;
+    background-color: var(--MediumBlue);
+    padding: 5px 30px;
+    border-radius: 25px;
+    color: var(--Orange);   
+    
+}
+
+.thanks p {
+    text-align: center;
+    font-size: 16px;
+}
